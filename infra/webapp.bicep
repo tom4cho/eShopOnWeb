@@ -16,7 +16,7 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2022-09-01' = {
 }
 resource appService 'Microsoft.Web/sites@2022-09-01' = {
   name: webAppName
-  kind: 'app, linux'
+  kind: 'app'
   location: location
   properties: {
     serverFarmId: appServicePlan.id
